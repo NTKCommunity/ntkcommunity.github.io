@@ -1,0 +1,82 @@
+---
+const teamMembers = [
+  {
+    name: "Member 1",
+    role: "Position 1",
+    image: "/assets/images/member1.jpg",
+    delay: 0,
+  },
+  {
+    name: "Member 2",
+    role: "Position 2",
+    image: "/assets/images/member2.jpg",
+    delay: 100,
+  },
+  {
+    name: "Member 3",
+    role: "Position 3",
+    image: "/assets/images/member3.jpg",
+    delay: 200,
+  },
+  {
+    name: "Member 4",
+    role: "Position 4",
+    image: "/assets/images/member4.jpg",
+    delay: 300,
+  },
+  {
+    name: "Member 5",
+    role: "Position 5",
+    image: "/assets/images/member4.jpg",
+    delay: 300,
+  },
+  {
+    name: "Member 6",
+    role: "Position 6",
+    image: "/assets/images/member4.jpg",
+    delay: 300,
+  },
+  {
+    name: "Member 7",
+    role: "Position 7",
+    image: "/assets/images/member4.jpg",
+    delay: 300,
+  },
+];
+
+---
+
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-blue-800 mb-2">Meet Our Team</h2>
+    <p class="text-gray-600 mb-10">Get to know our team members</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {teamMembers.map(({ name, role, image, delay }) => (
+        <div
+          class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
+          data-aos="zoom-in"
+          data-aos-delay={delay}
+        >
+          <div class="flex justify-center">
+           
+              <img
+                src={image}
+                alt={name}
+                class="rounded-full border-4 border-blue-600 w-24 h-24 object-cover"
+              />
+          </div>
+          <h3 class="text-blue-800 text-lg font-semibold mt-4">{name}</h3>
+          <p class="text-gray-600 text-sm">{role}</p>
+          <div class="flex justify-center gap-4 mt-3 text-blue-800 text-xl">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+  
