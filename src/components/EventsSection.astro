@@ -1,0 +1,99 @@
+---
+const events = [
+  {
+    title: "VS Code Dev Days Nepal",
+    date: "September 20, 2025",
+    location: "NCIT, Balkumari, Lalitpur",
+    attendees: "50+",
+    status: "Completed",
+    description: "3-hour hands-on workshop on AI-powered development with VS Code + GitHub Copilot. Perfect for students, developers, and AI enthusiasts.",
+    image: "/images/events/vscode-dev-days.jpg"
+  },
+  {
+    title: "Friday Forum - Mobile Development in AI Era", 
+    date: "July 18, 2025",
+    location: "Discord (Virtual)",
+    attendees: "100+",
+    status: "Completed",
+    description: "Building user first Native/Hybrid mobile applications in age of AI. Featuring Mr. Rishav Chudal, Sr. Software Engineer at eSewa.",
+    image: "/images/events/friday-forum.jpeg"
+  },
+  {
+    title: "AWS Cloud Workshop",
+    date: "June 21, 2025",
+    location: "NCIT Campus", 
+    attendees: "80+",
+    status: "Completed",
+    description: "Hands-on AWS Cloud Workshop covering Introduction to Cloud Computing, IAM, Amazon S3, and EC2. Partnership with AWS Cloud Club Nepal.",
+    image: "/images/events/aws-workshop.jpg"
+  }
+];
+---
+
+<section id="events" class="py-20 bg-slate-50 dark:bg-slate-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-50">
+        Recent <span class="text-ntc-primary">Events</span>
+      </h2>
+      <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-pretty">
+        Explore our recent events and activities that have brought together the tech community for learning and
+        innovation.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {events.map((event, index) => (
+        <div class="glass-effect border-2 border-[#0479BC]/30 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden rounded-lg">
+          <div class="relative">
+            <img
+              src={event.image || "/placeholders/placeholder.svg"}
+              alt={event.title}
+              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <span class="absolute top-4 right-4 bg-ntc-accent text-white px-2 py-1 rounded text-sm">
+              {event.status}
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-slate-900 dark:text-slate-50 group-hover:text-ntc-primary transition-colors">
+              {event.title}
+            </h3>
+
+            <div class="space-y-2 mb-4 text-sm text-slate-600 dark:text-slate-400">
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>{event.date}</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>{event.location}</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                </svg>
+                <span>{event.attendees} attendees</span>
+              </div>
+            </div>
+
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">{event.description}</p>
+
+            <div class="w-full border border-slate-200 dark:border-slate-700 bg-transparent text-slate-600 dark:text-slate-400 px-4 py-2 rounded-md flex items-center justify-center gap-2">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Event Completed
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
