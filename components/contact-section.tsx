@@ -65,19 +65,19 @@ export function ContactSection() {
                 <h4 className="font-semibold text-foreground mb-4">Community Stats</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">500+</div>
+                    <div className="text-2xl font-bold text-primary">30+</div>
                     <div className="text-sm text-muted-foreground">Active Members</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-secondary">50+</div>
+                    <div className="text-2xl font-bold text-secondary">20+</div>
                     <div className="text-sm text-muted-foreground">Events Hosted</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-accent">25+</div>
+                    <div className="text-2xl font-bold text-accent">5+</div>
                     <div className="text-sm text-muted-foreground">Projects Completed</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">100+</div>
+                    <div className="text-2xl font-bold text-primary">10+</div>
                     <div className="text-sm text-muted-foreground">Workshops Conducted</div>
                   </div>
                 </div>
