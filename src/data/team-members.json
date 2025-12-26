@@ -1,0 +1,182 @@
+[
+  {
+    "id": "hemraj-pant",
+    "name": "Hemraj Pant",
+    "role": "Coordinator",
+    "image": "/images/team/coordinator.jpg",
+    "bio": "Passionate about technology and community building, empowering teams to create real-world impact.",
+    "fullBio": "Hemraj Pant serves as the Coordinator of Nepal Tek Community, bringing passion and dedication to building a thriving tech community at NCIT. With a strong focus on technology and community building, Hemraj has been instrumental in organizing numerous events and workshops that have helped students grow their technical skills.\n\nHis leadership style emphasizes collaboration, innovation, and creating opportunities for students to learn and network with industry professionals. Under his coordination, the community has grown significantly and has become a vital part of the tech ecosystem at NCIT.\n\nHemraj believes in empowering teams and individuals to create real-world impact through technology. He is committed to fostering an environment where students can explore their interests, develop their skills, and contribute to meaningful projects.",
+    "social": {
+      "github": "https://github.com/hemrajpant69",
+      "linkedin": "https://linkedin.com/in/hemrajpant69",
+      "website": "https://hemrajpant69.github.io"
+    },
+    "achievements": [
+      "Led the organization of 10+ technical workshops",
+      "Built partnerships with AWS Cloud Club Nepal",
+      "Coordinated VS Code Dev Days Nepal 2025",
+      "Mentored 100+ students in their tech journey"
+    ],
+    "skills": ["Community Building", "Event Management", "Technical Leadership", "Mentorship"]
+  },
+  {
+    "id": "birat-aryal",
+    "name": "Birat Aryal",
+    "role": "Tech Lead",
+    "image": "/images/team/techlead.jpg",
+    "bio": "Exploring the realm of technology while leading, guiding, and empowering teams.",
+    "fullBio": "Birat Aryal is the Tech Lead of Nepal Tek Community, bringing technical expertise and leadership to guide the community's technical initiatives. His passion for exploring new technologies and sharing knowledge has made him an invaluable asset to the team.\n\nAs Tech Lead, Birat oversees the technical aspects of all community projects and events, ensuring that members receive quality technical guidance and support. He is particularly interested in modern web development, cloud technologies, and AI-powered development tools.\n\nBirat's approach to leadership focuses on empowering team members to take ownership of their learning journey while providing the guidance they need to succeed. He regularly conducts code reviews, technical workshops, and one-on-one mentoring sessions.",
+    "social": {
+      "github": "https://github.com/aryalbirat",
+      "linkedin": "https://linkedin.com/in/aryalbirat",
+      "website": "https://aryalbirat.com.np"
+    },
+    "achievements": [
+      "Architected community's technical infrastructure",
+      "Conducted workshops on VS Code and GitHub Copilot",
+      "Mentored students in full-stack development",
+      "Built multiple open-source projects for the community"
+    ],
+    "skills": ["Full-Stack Development", "Technical Mentorship", "Cloud Computing", "DevOps"]
+  },
+  {
+    "id": "subash-singh-dhami",
+    "name": "Subash Singh Dhami",
+    "role": "Event Coordinator",
+    "image": "/images/team/event-coordinator.jpg",
+    "bio": "Driving community growth while exploring real-world software engineering challenges.",
+    "fullBio": "Subash Singh Dhami serves as the Event Coordinator for Nepal Tek Community, bringing creativity and organizational skills to every event. His ability to manage complex logistics while maintaining a focus on attendee experience has resulted in numerous successful events.\n\nWith a passion for both software engineering and community engagement, Subash ensures that every event provides value to participants through hands-on learning, networking opportunities, and practical skill development.\n\nHis experience in real-world software engineering allows him to design events that bridge the gap between academic learning and industry requirements, preparing students for successful careers in technology.",
+    "social": {
+      "github": "https://github.com/mesubash",
+      "linkedin": "https://linkedin.com/in/subashsdhami",
+      "website": "https://www.subashsdhami.com.np"
+    },
+    "achievements": [
+      "Organized 15+ technical events and workshops",
+      "Coordinated AWS Cloud Workshop with 80+ attendees",
+      "Managed Friday Forum speaker series",
+      "Developed event feedback and improvement systems"
+    ],
+    "skills": ["Event Management", "Software Engineering", "Project Management", "Stakeholder Coordination"]
+  },
+  {
+    "id": "niraj-bhusal",
+    "name": "Niraj Bhusal",
+    "role": "Secretary",
+    "image": "/images/team/secretary.jpg",
+    "bio": "Dedicated to keeping things organized and fostering collaboration in tech communities.",
+    "fullBio": "Niraj Bhusal serves as the Secretary of Nepal Tek Community, ensuring smooth operations and effective communication across all community activities. His organizational skills and attention to detail keep the team running efficiently.\n\nAs Secretary, Niraj maintains records, manages communications, and ensures that all team members are aligned with community goals and initiatives. He plays a crucial role in documenting events, maintaining attendance records, and coordinating between different team members.\n\nHis dedication to fostering collaboration has helped create a supportive environment where all members feel valued and heard. Niraj believes in the power of organization and clear communication to achieve community goals.",
+    "social": {
+      "github": "https://github.com/niraj5511",
+      "linkedin": "https://www.linkedin.com/in/niraj-bhusal-6262b830a",
+      "website": "https://www.bhusalniraj.com.np"
+    },
+    "achievements": [
+      "Maintained comprehensive records of all community activities",
+      "Streamlined communication processes",
+      "Coordinated team meetings and planning sessions",
+      "Developed documentation systems for the community"
+    ],
+    "skills": ["Administrative Management", "Communication", "Documentation", "Team Coordination"]
+  },
+  {
+    "id": "aakriti-dahal",
+    "name": "Aakriti Dahal",
+    "role": "Public Relation Lead",
+    "image": "/images/team/pr-lead.jpg",
+    "bio": "Learning and growing together",
+    "fullBio": "Aakriti Dahal leads the Public Relations efforts for Nepal Tek Community, focusing on building relationships with stakeholders, promoting events, and growing the community's visibility. Her communication skills and networking abilities have been instrumental in expanding the community's reach.\n\nAs PR Lead, Aakriti manages social media presence, coordinates with media partners, and builds relationships with industry professionals and other tech communities. Her efforts have significantly increased community engagement and participation in events.\n\nShe believes in the power of learning and growing together, and works to create an inclusive environment where everyone feels welcome to participate and contribute to the community.",
+    "social": {
+      "github": "https://github.com/aakriti-dahal",
+      "linkedin": "https://www.linkedin.com/in/aakriti-dahal/",
+      "website": "#"
+    },
+    "achievements": [
+      "Increased social media engagement by 200%",
+      "Built partnerships with 5+ tech communities",
+      "Coordinated PR for major events",
+      "Developed community branding and messaging"
+    ],
+    "skills": ["Public Relations", "Social Media Marketing", "Networking", "Content Creation"]
+  },
+  {
+    "id": "dinesh-shakya",
+    "name": "Dinesh Shakya",
+    "role": "Executive Member",
+    "image": "/images/team/dinesh.jpg",
+    "bio": "Passionate civil engineering student focused on structures, construction, and green sustainable practices, with a strong interest in IT and technology to drive innovative solutions.",
+    "fullBio": "Dinesh Shakya brings a unique perspective to Nepal Tek Community as a civil engineering student with a strong passion for technology. His interdisciplinary approach combines structural engineering knowledge with IT skills to explore innovative solutions.\n\nHis interest in sustainable practices and green technology aligns with the community's vision of using technology for positive impact. Dinesh actively participates in community projects that bridge the gap between civil engineering and information technology.\n\nHe is particularly interested in how technology can be applied to construction, infrastructure management, and sustainable development initiatives.",
+    "social": {
+      "github": "#",
+      "linkedin": "https://www.linkedin.com/in/dinesh-shakya-284626344",
+      "website": "#"
+    },
+    "achievements": [
+      "Contributed to interdisciplinary tech projects",
+      "Promoted sustainable technology practices",
+      "Participated in community workshops and events",
+      "Mentored students in tech adoption"
+    ],
+    "skills": ["Civil Engineering", "Sustainable Technology", "Project Planning", "Technical Innovation"]
+  },
+  {
+    "id": "anamika-aryal",
+    "name": "Anamika Aryal",
+    "role": "Executive Member",
+    "image": "/images/team/anamika.jpg",
+    "bio": "Eager to learn anything related to tech.",
+    "fullBio": "Anamika Aryal is an Executive Member of Nepal Tek Community with an insatiable curiosity for all things tech. Her enthusiasm for learning and willingness to explore new technologies make her a valuable team member.\n\nShe actively participates in workshops, hackathons, and community projects, always eager to expand her knowledge and skills. Her positive attitude and collaborative spirit contribute to the welcoming atmosphere of the community.\n\nAnamika believes in continuous learning and encourages fellow community members to explore diverse areas of technology without fear of failure.",
+    "social": {
+      "github": "https://github.com/anamika-aryal",
+      "linkedin": "https://www.linkedin.com/in/anamika-aryal-5b79ba386/",
+      "website": "#"
+    },
+    "achievements": [
+      "Participated in multiple hackathons",
+      "Contributed to open-source projects",
+      "Organized study groups for community members",
+      "Mentored junior members"
+    ],
+    "skills": ["Web Development", "Problem Solving", "Collaborative Learning", "Technical Research"]
+  },
+  {
+    "id": "anisha-swarnkar",
+    "name": "Anisha Swarnkar",
+    "role": "Executive Member",
+    "image": "/images/team/anisha.jpg",
+    "bio": "Passionate about connecting peoples, ideas, and opportunities in technology",
+    "fullBio": "Anisha Swarnkar is an Executive Member who excels at building bridges between people, ideas, and opportunities within the tech community. Her networking skills and genuine interest in helping others succeed make her an invaluable connector.\n\nShe actively works to create opportunities for community members to collaborate on projects, attend industry events, and connect with professionals in the field. Her efforts have resulted in numerous mentorship relationships and collaboration opportunities.\n\nAnisha believes that the strength of any community lies in its connections, and she works tirelessly to ensure that every member has access to the resources and relationships they need to thrive.",
+    "social": {
+      "github": "https://github.com/anishaswarnkar21",
+      "linkedin": "https://www.linkedin.com/in/anisha-Swarnkar-674b56357",
+      "website": "#"
+    },
+    "achievements": [
+      "Facilitated 20+ networking sessions",
+      "Connected students with industry mentors",
+      "Organized collaborative project teams",
+      "Built partnerships with local tech companies"
+    ],
+    "skills": ["Networking", "Community Building", "Relationship Management", "Event Facilitation"]
+  },
+  {
+    "id": "gaurav-joshi",
+    "name": "Gaurav Joshi",
+    "role": "Executive Member",
+    "image": "/images/team/gaurab.jpg",
+    "bio": "Passionate about automation and embedded systems, creating efficient hardware-software solutions.",
+    "fullBio": "Gaurav Joshi is an Executive Member with a deep passion for automation and embedded systems. His expertise in creating efficient hardware-software solutions brings a unique technical dimension to the community.\n\nHe regularly conducts workshops on IoT, embedded systems, and automation, helping students understand the practical applications of these technologies. His projects often demonstrate how software can interact with hardware to create intelligent systems.\n\nGaurav is committed to making embedded systems and automation accessible to all students, regardless of their background, through hands-on demonstrations and beginner-friendly explanations.",
+    "social": {
+      "github": "https://github.com/Gauravjoshi08X",
+      "linkedin": "https://www.linkedin.com/in/gaurav-joshi-a6b884342",
+      "website": "#"
+    },
+    "achievements": [
+      "Built multiple IoT projects for demonstrations",
+      "Conducted workshops on embedded systems",
+      "Mentored students in hardware-software integration",
+      "Developed automation solutions for community use"
+    ],
+    "skills": ["Embedded Systems", "IoT", "Automation", "Hardware-Software Integration"]
+  }
+]

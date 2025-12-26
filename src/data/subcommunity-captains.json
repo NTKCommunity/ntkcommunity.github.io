@@ -1,0 +1,38 @@
+[
+  {
+    "id": "john-doe",
+    "name": "John Doe",
+    "role": "Web Development Captain",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Leading the web development subcommunity, teaching modern frameworks and best practices.",
+    "social": {
+      "github": "https://github.com/johndoe",
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "website": "#"
+    }
+  },
+  {
+    "id": "jane-smith",
+    "name": "Jane Smith",
+    "role": "AI/ML Captain",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Passionate about artificial intelligence and machine learning, guiding students through AI projects.",
+    "social": {
+      "github": "https://github.com/janesmith",
+      "linkedin": "https://linkedin.com/in/janesmith",
+      "website": "#"
+    }
+  },
+  {
+    "id": "mike-johnson",
+    "name": "Mike Johnson",
+    "role": "Mobile Development Captain",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Expert in mobile app development, leading workshops on Flutter and React Native.",
+    "social": {
+      "github": "https://github.com/mikejohnson",
+      "linkedin": "https://linkedin.com/in/mikejohnson",
+      "website": "#"
+    }
+  }
+]

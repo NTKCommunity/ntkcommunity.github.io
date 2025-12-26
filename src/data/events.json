@@ -1,0 +1,93 @@
+[
+  {
+    "id": "vscode-dev-days-2025",
+    "title": "VS Code Dev Days Nepal",
+    "date": "September 20, 2025",
+    "location": "NCIT, Balkumari, Lalitpur",
+    "attendees": "50+",
+    "status": "Completed",
+    "description": "3-hour hands-on workshop on AI-powered development with VS Code + GitHub Copilot. Perfect for students, developers, and AI enthusiasts.",
+    "fullDescription": [
+      {
+        "heading": "About the Event",
+        "content": "VS Code Dev Days Nepal was a transformative 3-hour hands-on workshop that brought together students, developers, and AI enthusiasts to explore the cutting-edge world of AI-powered development."
+      },
+      {
+        "heading": "What We Covered",
+        "content": "Introduction to VS Code and its ecosystem\nAI-powered coding with GitHub Copilot\nBest practices for modern development workflows\nHands-on coding sessions and exercises\nQ&A session with industry experts"
+      },
+      {
+        "heading": "Key Highlights",
+        "content": "Over 50 participants joined us for this incredible learning experience. The workshop featured live coding demonstrations, interactive sessions, and real-world use cases of AI in software development. Participants learned how to leverage GitHub Copilot to accelerate their coding productivity and write better code."
+      },
+      {
+        "heading": "Feedback",
+        "content": "The event received overwhelming positive feedback from participants who appreciated the practical approach and hands-on learning experience. Many attendees expressed their enthusiasm about incorporating these tools into their daily development workflow."
+      }
+    ],
+    "image": "/images/events/vscode-dev-days.jpg",
+    "gallery": ["/images/events/vscode-dev-days.jpg"]
+  },
+  {
+    "id": "friday-forum-mobile-dev-2025",
+    "title": "Friday Forum - Mobile Development in AI Era",
+    "date": "July 18, 2025",
+    "location": "Discord (Virtual)",
+    "attendees": "100+",
+    "status": "Completed",
+    "description": "Building user first Native/Hybrid mobile applications in age of AI. Featuring Mr. Rishav Chudal, Sr. Software Engineer at eSewa.",
+    "fullDescription": [
+      {
+        "heading": "About the Event",
+        "content": "Our Friday Forum series continued with an insightful session on Mobile Development in the AI Era. We were privileged to have Mr. Rishav Chudal, Senior Software Engineer at eSewa, share his expertise on building user-first mobile applications."
+      },
+      {
+        "heading": "Session Topics",
+        "content": "Current trends in mobile development\nNative vs Hybrid approaches\nIntegrating AI capabilities in mobile apps\nUser-first design principles\nPerformance optimization techniques\nBest practices from eSewa's development team"
+      },
+      {
+        "heading": "Speaker Profile",
+        "content": "Mr. Rishav Chudal brings extensive experience in mobile development from his work at eSewa, Nepal's leading digital wallet. His insights into building scalable and user-friendly mobile applications were invaluable to our community."
+      },
+      {
+        "heading": "Impact",
+        "content": "With over 100 attendees joining virtually through Discord, this session sparked engaging discussions about the future of mobile development in Nepal and the role of AI in shaping user experiences."
+      }
+    ],
+    "image": "/images/events/friday-forum.jpeg",
+    "gallery": ["/images/events/friday-forum.jpeg"]
+  },
+  {
+    "id": "aws-cloud-workshop-2025",
+    "title": "AWS Cloud Workshop",
+    "date": "June 21, 2025",
+    "location": "NCIT Campus",
+    "attendees": "80+",
+    "status": "Completed",
+    "description": "Hands-on AWS Cloud Workshop covering Introduction to Cloud Computing, IAM, Amazon S3, and EC2. Partnership with AWS Cloud Club Nepal.",
+    "fullDescription": [
+      {
+        "heading": "About the Workshop",
+        "content": "In partnership with AWS Cloud Club Nepal, we organized a comprehensive hands-on workshop introducing students to Amazon Web Services and cloud computing fundamentals."
+      },
+      {
+        "heading": "Workshop Modules",
+        "content": "Introduction to Cloud Computing concepts\nAWS account setup and navigation\nIdentity and Access Management (IAM)\nAmazon S3 for object storage\nEC2 instances and virtual servers\nSecurity best practices\nCost optimization strategies"
+      },
+      {
+        "heading": "Hands-on Learning",
+        "content": "Participants got hands-on experience creating and managing AWS resources. Each attendee worked through practical exercises, deploying their own applications and learning industry-standard cloud practices."
+      },
+      {
+        "heading": "Partnership",
+        "content": "This workshop was made possible through our partnership with AWS Cloud Club Nepal, demonstrating our commitment to bringing quality technical education to students at NCIT."
+      },
+      {
+        "heading": "Outcomes",
+        "content": "Over 80 students gained practical cloud computing skills that are directly applicable to their academic projects and future careers. Many participants expressed interest in pursuing AWS certifications after the workshop."
+      }
+    ],
+    "image": "/images/events/aws-workshop.jpg",
+    "gallery": ["/images/events/aws-workshop.jpg"]
+  }
+]

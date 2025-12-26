@@ -1,0 +1,80 @@
+[
+  {
+    "id": "alumni-1",
+    "name": "Sarah Williams",
+    "role": "Software Engineer at Google",
+    "graduationYear": "2023",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Former Tech Lead at NTK, now building scalable systems at Google.",
+    "social": {
+      "github": "https://github.com/sarahwilliams",
+      "linkedin": "https://linkedin.com/in/sarahwilliams",
+      "website": "#"
+    }
+  },
+  {
+    "id": "alumni-2",
+    "name": "David Chen",
+    "role": "Senior Developer at Microsoft",
+    "graduationYear": "2022",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Alumni member who contributed to multiple community projects and events.",
+    "social": {
+      "github": "https://github.com/davidchen",
+      "linkedin": "https://linkedin.com/in/davidchen",
+      "website": "#"
+    }
+  },
+  {
+    "id": "alumni-3",
+    "name": "Priya Sharma",
+    "role": "Full Stack Developer at Meta",
+    "graduationYear": "2023",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Former Event Coordinator, now working on cutting-edge web technologies.",
+    "social": {
+      "github": "https://github.com/priyasharma",
+      "linkedin": "https://linkedin.com/in/priyasharma",
+      "website": "#"
+    }
+  },
+  {
+    "id": "alumni-4",
+    "name": "Alex Kumar",
+    "role": "DevOps Engineer at Amazon",
+    "graduationYear": "2021",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Pioneer member who helped establish the community infrastructure.",
+    "social": {
+      "github": "https://github.com/alexkumar",
+      "linkedin": "https://linkedin.com/in/alexkumar",
+      "website": "#"
+    }
+  },
+  {
+    "id": "alumni-5",
+    "name": "Emily Zhang",
+    "role": "ML Engineer at OpenAI",
+    "graduationYear": "2022",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Led AI/ML workshops and now researching cutting-edge AI technologies.",
+    "social": {
+      "github": "https://github.com/emilyzhang",
+      "linkedin": "https://linkedin.com/in/emilyzhang",
+      "website": "#"
+    }
+  },
+  {
+    "id": "alumni-6",
+    "name": "Raj Patel",
+    "role": "Tech Lead at Startup",
+    "graduationYear": "2023",
+    "image": "/placeholders/placeholder.svg",
+    "bio": "Former Coordinator who now leads a successful tech startup.",
+    "social": {
+      "github": "https://github.com/rajpatel",
+      "linkedin": "https://linkedin.com/in/rajpatel",
+      "website": "#"
+    }
+  }
+]

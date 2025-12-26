@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import eventsData from '../data/events.json';
+---
+
+<Layout title="All Events - Nepal Tek Community">
+  <Header />
+  
+  <main class="min-h-screen pt-20">
+    <!-- Page Header -->
+    <section class="py-16 bg-gradient-to-br from-[#0479BC]/10 to-slate-50 dark:from-[#0479BC]/20 dark:to-slate-900">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-50">
+            All <span class="text-[#0479BC]">Events</span>
+          </h1>
+          <p class="text-lg text-slate-600 dark:text-slate-400">
+            Explore all the events, workshops, and activities organized by Nepal Tek Community
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-900">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {eventsData.map((event) => (
+            <div class="glass-effect border-2 border-[#0479BC]/30 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden rounded-lg">
+              <div class="relative">
+                <img
+                  src={event.image || "/placeholders/placeholder.svg"}
+                  alt={event.title}
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-4 right-4 bg-[#0479BC] text-white px-3 py-1 rounded text-sm">
+                  {event.status}
+                </span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 text-slate-900 dark:text-slate-50 group-hover:text-[#0479BC] transition-colors">
+                  {event.title}
+                </h3>
+
+                <div class="space-y-2 mb-4 text-sm text-slate-600 dark:text-slate-400">
+                  <div class="flex items-center gap-2">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>{event.date}</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>{event.location}</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                    </svg>
+                    <span>{event.attendees} attendees</span>
+                  </div>
+                </div>
+
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  {event.description}
+                </p>
+
+                <a 
+                  href={`/events/${event.id}`}
+                  class="block w-full bg-[#0479BC] text-white hover:bg-[#0479BC]/90 px-4 py-2 rounded-md text-center font-medium transition-colors"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Back to Home -->
+        <div class="mt-12 text-center">
+          <a 
+            href="/"
+            class="inline-flex items-center text-[#0479BC] hover:text-[#0479BC]/80 font-medium transition-colors"
+          >
+            <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
