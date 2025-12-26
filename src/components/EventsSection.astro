@@ -1,33 +1,5 @@
 ---
-const events = [
-  {
-    title: "VS Code Dev Days Nepal",
-    date: "September 20, 2025",
-    location: "NCIT, Balkumari, Lalitpur",
-    attendees: "50+",
-    status: "Completed",
-    description: "3-hour hands-on workshop on AI-powered development with VS Code + GitHub Copilot. Perfect for students, developers, and AI enthusiasts.",
-    image: "/images/events/vscode-dev-days.jpg"
-  },
-  {
-    title: "Friday Forum - Mobile Development in AI Era", 
-    date: "July 18, 2025",
-    location: "Discord (Virtual)",
-    attendees: "100+",
-    status: "Completed",
-    description: "Building user first Native/Hybrid mobile applications in age of AI. Featuring Mr. Rishav Chudal, Sr. Software Engineer at eSewa.",
-    image: "/images/events/friday-forum.jpeg"
-  },
-  {
-    title: "AWS Cloud Workshop",
-    date: "June 21, 2025",
-    location: "NCIT Campus", 
-    attendees: "80+",
-    status: "Completed",
-    description: "Hands-on AWS Cloud Workshop covering Introduction to Cloud Computing, IAM, Amazon S3, and EC2. Partnership with AWS Cloud Club Nepal.",
-    image: "/images/events/aws-workshop.jpg"
-  }
-];
+import eventsData from '../data/events.json';
 ---
 
 <section id="events" class="py-20 bg-slate-50 dark:bg-slate-900">
@@ -43,7 +15,7 @@ const events = [
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {events.map((event, index) => (
+      {eventsData.map((event, index) => (
         <div class="glass-effect border-2 border-[#0479BC]/30 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden rounded-lg">
           <div class="relative">
             <img
@@ -85,15 +57,28 @@ const events = [
 
             <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">{event.description}</p>
 
-            <div class="w-full border border-slate-200 dark:border-slate-700 bg-transparent text-slate-600 dark:text-slate-400 px-4 py-2 rounded-md flex items-center justify-center gap-2">
+            <a 
+              href={`/events/${event.id}`}
+              class="block w-full bg-[#0479BC] text-white hover:bg-[#0479BC]/90 px-4 py-2 rounded-md text-center font-medium transition-colors flex items-center justify-center gap-2"
+            >
               <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Event Completed
-            </div>
+              Details
+            </a>
           </div>
         </div>
       ))}
+    </div>
+
+    <!-- See More Button -->
+    <div class="mt-12 text-center">
+      <a 
+        href="/events"
+        class="inline-block bg-[#0479BC] text-white hover:bg-[#0479BC]/90 px-8 py-3 rounded-md font-medium transition-colors"
+      >
+        See More Events
+      </a>
     </div>
   </div>
 </section>
