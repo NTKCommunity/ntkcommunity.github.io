@@ -1,0 +1,35 @@
+[
+  {
+    "id": "hackathon-2026",
+    "title": "NTK Hackathon 2026",
+    "date": "February 15-16, 2026",
+    "location": "NCIT Campus",
+    "attendees": "TBD",
+    "status": "Registration Open",
+    "description": "24-hour hackathon bringing together innovative minds to build solutions for real-world problems. Win exciting prizes and mentorship opportunities.",
+    "image": "/placeholders/placeholder.svg",
+    "registrationLink": "#"
+  },
+  {
+    "id": "ai-ml-workshop-2026",
+    "title": "AI & Machine Learning Workshop",
+    "date": "January 10, 2026",
+    "location": "NCIT Lab",
+    "attendees": "Limited Seats",
+    "status": "Coming Soon",
+    "description": "Comprehensive workshop on AI and Machine Learning fundamentals, covering neural networks, deep learning, and practical applications.",
+    "image": "/placeholders/placeholder.svg",
+    "registrationLink": "#"
+  },
+  {
+    "id": "tech-talk-series-2026",
+    "title": "Tech Talk Series - DevOps",
+    "date": "January 25, 2026",
+    "location": "Virtual (Zoom)",
+    "attendees": "Open for All",
+    "status": "Coming Soon",
+    "description": "Learn about DevOps practices, CI/CD pipelines, and modern deployment strategies from industry experts.",
+    "image": "/placeholders/placeholder.svg",
+    "registrationLink": "#"
+  }
+]
