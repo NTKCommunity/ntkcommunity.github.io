@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About Us - Nepal Tek Community">
+  <!-- Hero Section -->
+  <section class="py-24 bg-gray-50 overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl -mr-48 -mt-48 transition-transform duration-[10s] animate-pulse"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 font-bold rounded-full text-xs uppercase tracking-widest mb-6">Our Story</span>
+        <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-8 uppercase tracking-tighter leading-none">
+          Bridging the <span class="text-blue-600">Gap</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+          Nepal Tek Community (NTK) is a student-led initiative at Nepal College of Information Technology (NCIT) dedicated to fostering a culture of technical innovation and community leadership.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-12">
+          <div>
+            <h2 class="text-3xl font-black text-gray-900 uppercase tracking-tight mb-6 flex items-center gap-4">
+              <span class="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-lg shadow-lg">M</span>
+              Our Mission
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              To empower students by providing a platform for continuous learning, technical skill development, and professional networking. We believe that by working together, we can bridge the gap between academic theory and industry practice.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-3xl font-black text-gray-900 uppercase tracking-tight mb-6 flex items-center gap-4">
+              <span class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-lg shadow-lg">V</span>
+              Our Vision
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              To become the leading student tech hub in Nepal, producing world-class developers, innovators, and leaders who contribute meaningfully to the global technology landscape.
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+           <div class="aspect-square rounded-[3rem] overflow-hidden shadow-2xl rotate-2">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" alt="Team Collaboration" class="w-full h-full object-cover" />
+           </div>
+           <div class="absolute -bottom-6 -left-6 bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 max-w-xs hidden md:block">
+              <p class="text-blue-600 font-black text-2xl mb-1">500+</p>
+              <p class="text-gray-500 text-sm font-medium">Students impacted through our weekly forums & workshops.</p>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Pillars -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black text-gray-900 uppercase tracking-tighter">The Foundations of NTK</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm transition-all hover:shadow-xl group">
+          <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4.354l1.107 3.184h3.353l-2.712 1.97 1.036 3.184-2.784-2.022-2.784 2.022 1.036-3.184-2.712-1.97h3.353L12 4.354z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
+          <p class="text-gray-500 leading-relaxed">We encourage students to think outside the box and work on real-world projects that solve local problems.</p>
+        </div>
+        <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm transition-all hover:shadow-xl group">
+          <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Collaboration</h3>
+          <p class="text-gray-500 leading-relaxed">Our sub-communities foster a culture of peer-to-peer learning and cross-domain collaboration.</p>
+        </div>
+        <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm transition-all hover:shadow-xl group">
+          <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.022.547l-2.387 2.387a2 2 0 102.828 2.828l3.36-3.36c.15-.15.312-.27.48-.36a3.999 3.999 0 013.91 0c.168.09.33.21.48.36l3.36 3.36a2 2 0 102.828-2.828l-2.387-2.387zM12 12a4 4 0 100-8 4 4 0 000 8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Integrity</h3>
+          <p class="text-gray-500 leading-relaxed">We stand for ethical practices in tech and maintain a neutral, inclusive environment for all students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutional Support -->
+  <section class="py-24 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-gray-400 uppercase tracking-widest mb-12">Supported By</h2>
+      <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 hover:opacity-100 transition-opacity">
+        <a href="https://ncit.edu.np" target="_blank" class="text-3xl font-black text-gray-900 flex items-center gap-2">
+          <div class="w-12 h-12 bg-blue-600 rounded-lg"></div>
+          NCIT College
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

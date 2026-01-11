@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { subCommunities } from "../data/sub-communities.js";
+---
+
+<BaseLayout title="Sub-communities - NTK">
+  <section class="py-24 bg-gray-50 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center mb-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 uppercase tracking-tighter">
+          Our <span class="text-blue-600">Sub-communities</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Explore specialized domains and join groups that align with your interests and passion.
+        </p>
+      </div>
+
+      <!-- Communities Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {subCommunities.map((community) => (
+          <a href={`/sub-communities/${community.id}`} class="group relative overflow-hidden bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <div class="aspect-video relative overflow-hidden">
+               <img 
+                src={`https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800&h=800`} 
+                alt={community.name} 
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent"></div>
+            </div>
+            
+            <div class="p-8">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
+                  {community.name.charAt(0)}
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors uppercase tracking-tight">{community.name}</h2>
+              </div>
+              
+              <p class="text-gray-600 line-clamp-3 mb-6 leading-relaxed">
+                {community.description}
+              </p>
+
+              <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-widest">Explore Group</span>
+                <svg class="w-6 h-6 text-blue-600 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

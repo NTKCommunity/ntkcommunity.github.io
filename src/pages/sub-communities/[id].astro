@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { subCommunities } from "../../data/sub-communities.js";
+
+export async function getStaticPaths() {
+  return subCommunities.map((community) => ({
+    params: { id: community.id },
+    props: { community },
+  }));
+}
+
+const { community } = Astro.props;
+---
+
+<BaseLayout title={`${community.name} - NTK`}>
+  <section class="py-24 bg-white min-h-screen">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Back Link -->
+      <a href="/sub-communities" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium mb-12 transition-colors group">
+        <svg class="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Back to All Sub-communities
+      </a>
+
+      <!-- Community Header -->
+      <div class="mb-20">
+        <div class="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 font-bold rounded-full text-xs uppercase tracking-widest mb-6">
+          Sub-community Focus
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-8 uppercase tracking-tighter">
+          {community.name}
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+          {community.longDescription}
+        </p>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-3 gap-16">
+        <div class="lg:col-span-2 space-y-16">
+          <!-- Vision -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center text-sm font-black">1</span>
+              Community Vision
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed bg-gray-50 p-8 rounded-[2rem] border border-gray-100 italic">
+              "{community.vision}"
+            </p>
+          </div>
+
+          <!-- Projects -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center text-sm font-black">2</span>
+              Core Projects
+            </h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+              {community.projects.map((project) => (
+                <div class="flex items-center gap-4 p-5 bg-white border border-gray-100 rounded-2xl shadow-sm">
+                  <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                  <span class="font-bold text-gray-800">{project}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1">
+          <!-- Captain Card -->
+          <div class="sticky top-32">
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-[2.5rem] p-8 text-white shadow-2xl relative overflow-hidden">
+               <div class="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+               <div class="absolute -bottom-12 -left-12 w-32 h-32 bg-indigo-900/20 rounded-full blur-3xl"></div>
+              
+              <div class="relative z-10">
+                <h3 class="text-sm font-bold uppercase tracking-widest text-blue-100 mb-6">Sub-community Captain</h3>
+                <div class="w-32 h-32 rounded-3xl overflow-hidden mb-6 shadow-xl border-4 border-white/20">
+                   <img src={community.captain.image} alt={community.captain.name} class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-2xl font-black mb-2">{community.captain.name}</h4>
+                <p class="text-blue-100/90 italic mb-8">"{community.captain.message}"</p>
+                
+                <a href="mailto:contact@ntk.org.np" class="inline-flex w-full items-center justify-center px-6 py-4 bg-white text-blue-700 font-bold rounded-2xl hover:bg-gray-50 transition-colors">
+                  Join Discord Group
+                </a>
+              </div>
+            </div>
+            
+            <p class="mt-6 text-sm text-center text-gray-400 font-medium">
+              Want to lead a project? <a href="#" class="text-blue-600 underline">Apply as Lead</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

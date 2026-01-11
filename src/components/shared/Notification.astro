@@ -5,7 +5,7 @@ const { message } = Astro.props;
 <div id="ntk-notice" class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative text-center text-sm md:text-base" role="alert">
   <strong class="font-bold">📢</strong>
   <span class="block sm:inline ml-2">{message}</span>
-  <button onclick=closeBanner() class="absolute top-1 right-2 text-blue-600 hover:text-blue-800">
+  <button id="close-notice" class="absolute top-1 right-2 text-blue-600 hover:text-blue-800">
     <svg class="fill-current h-5 w-5" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
       <title>Close</title>
       <path d="M14.348 5.652a1 1 0 00-1.414 0L10 8.586 7.066 5.652A1 1 0 105.652 7.066L8.586 10l-2.934 2.934a1 1 0 101.414 1.414L10 11.414l2.934 2.934a1 1 0 001.414-1.414L11.414 10l2.934-2.934a1 1 0 000-1.414z" />
@@ -14,9 +14,12 @@ const { message } = Astro.props;
 </div>
 
 <script>
-  let visible = true;
-  function closeBanner() {
-    visible = false;
-    document.getElementById("ntk-notice").classList.add("hidden");
+  const closeBtn = document.getElementById("close-notice");
+  const notice = document.getElementById("ntk-notice");
+  
+  if (closeBtn && notice) {
+    closeBtn.addEventListener("click", () => {
+      notice.classList.add("hidden");
+    });
   }
 </script>

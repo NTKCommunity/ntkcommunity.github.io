@@ -1,29 +1,32 @@
 ---
 ---
-<nav class="bg-white shadow-md sticky top-0 z-50">
+<nav class="bg-white shadow-md sticky top-0 z-[100]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
-      <!-- Logo -->
-      <a href="/">
-        <img src="/assets/images/logo.png" alt="NTK Logo" class="h-28 w-auto" />
-      </a>
-
-      <!-- Desktop Nav -->
-      <div class="hidden md:flex space-x-8 font-medium text-gray-700">
-        <a href="/" class="hover:text-blue-600 transition">Home</a>
-        <a href="#events" class="hover:text-blue-600 transition">Events</a>
-        <a href="#about" class="hover:text-blue-600 transition">About</a>
-        <a href="#stories" class="hover:text-blue-600 transition">Stories</a>
+      <!-- Logo Container -->
+      <div class="flex-shrink-0 flex items-center gap-3">
+        <a href="/" class="flex items-center group">
+          <img src="/assets/images/logo.png" alt="NTK Logo" class="h-16 w-auto md:h-20 transition-transform group-hover:scale-105" />
+        </a>
       </div>
 
-      <!-- Mobile Hamburger -->
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest text-gray-700">
+        <a href="/" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600 py-1">Home</a>
+        <a href="/about" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600 py-1">About</a>
+        <a href="/events" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600 py-1">Events</a>
+        <a href="/sub-communities" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600 py-1">Communities</a>
+        <a href="/team" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600 py-1">Team</a>
+      </div>
+
+      <!-- Mobile Hamburger (Pushed to far right) -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" class="text-gray-900 focus:outline-none p-2 rounded-xl bg-gray-50 border border-gray-100 shadow-sm active:scale-95 transition-transform">
+          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -31,25 +34,46 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
-    <a href="/" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
-    <a href="#events" class="block py-2 text-gray-700 hover:text-blue-600">Events</a>
-    <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
-    <a href="#stories" class="block py-2 text-gray-700 hover:text-blue-600">Stories</a>
+  <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-50 overflow-hidden transition-all">
+    <div class="px-6 py-8 flex flex-col gap-6">
+      <a href="/" class="text-2xl font-black text-gray-900 uppercase tracking-tighter hover:text-blue-600">Home</a>
+      <a href="/about" class="text-2xl font-black text-gray-900 uppercase tracking-tighter hover:text-blue-600">About Us</a>
+      <a href="/events" class="text-2xl font-black text-gray-900 uppercase tracking-tighter hover:text-blue-600">Events & Forums</a>
+      <a href="/sub-communities" class="text-2xl font-black text-gray-900 uppercase tracking-tighter hover:text-blue-600">Sub-communities</a>
+      <a href="/team" class="text-2xl font-black text-gray-900 uppercase tracking-tighter hover:text-blue-600">Our Team</a>
+      
+      <div class="mt-8 pt-8 border-t border-gray-100">
+        <a href="https://discord.gg/c8Wddj7aXH" target="_blank" class="w-full inline-flex items-center justify-center px-6 py-4 bg-blue-600 text-white font-black rounded-2xl uppercase tracking-widest shadow-xl shadow-blue-600/20">
+          Join Discord
+        </a>
+      </div>
+    </div>
   </div>
 </nav>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  function setupNav() {
     const toggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("mobile-menu");
     const openIcon = document.getElementById("menu-open");
     const closeIcon = document.getElementById("menu-close");
 
-    toggle.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-      openIcon.classList.toggle("hidden");
-      closeIcon.classList.toggle("hidden");
-    });
-  });
+    if (toggle && menu) {
+      toggle.addEventListener("click", () => {
+        const isHidden = menu.classList.toggle("hidden");
+        openIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+        
+        if (!isHidden) {
+          menu.style.maxHeight = menu.scrollHeight + "px";
+        } else {
+          menu.style.maxHeight = null;
+        }
+      });
+    }
+  }
+
+  // Handle both initial load and view transitions
+  setupNav();
+  document.addEventListener("astro:after-swap", setupNav);
 </script>

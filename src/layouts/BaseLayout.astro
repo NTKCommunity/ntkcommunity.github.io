@@ -4,6 +4,7 @@ import "../styles/global.css";
 import Notification from "../components/shared/Notification.astro";
 import TopNavbar from "../components/shared/TopNavbar.astro";
 import Footer from "../components/shared/Footer.astro";
+import { siteConfig } from "../data/site-config.js";
 
 ---
 
@@ -12,12 +13,47 @@ import Footer from "../components/shared/Footer.astro";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Nepal Tek Community - NTK</title>
+		<meta name="description" content="Nepal Tek Community (NTK) is the premier student-led tech organization at NCIT, bridging academia and industry through innovation, workshops, and weekly forums." />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://ntk.org.np/" />
+		<meta property="og:title" content="Nepal Tek Community - Empowering Student Innovation" />
+		<meta property="og:description" content="Join the largest student tech hub at NCIT. Explore our sub-communities, workshops, and weekly Friday Forums." />
+		<meta property="og:image" content="/assets/images/og-image.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://ntk.org.np/" />
+		<meta property="twitter:title" content="Nepal Tek Community - NTK" />
+		<meta property="twitter:description" content="Empowering the next generation of tech leaders in Nepal. NCIT's student tech community." />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--font-heading: 'Outfit', sans-serif;
+				--font-body: 'Inter', sans-serif;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				font-family: var(--font-body);
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-family: var(--font-heading);
+			}
+		</style>
 	</head>
 	<body class="bg-white text-gray-900">
-		<!-- Notification Banner (optional message passed as prop) -->
-		<Notification
-			message="Nepal Tek Community is looking for enthusiastic folks for executive 2025/26. Apply now!"
-		/>
+		<!-- Notification Banner (configurable via site-config.js) -->
+		{siteConfig.notification.enabled && (
+			<Notification
+				message={siteConfig.notification.message}
+			/>
+		)}
 
 		<!-- Top Navigation -->
 		<TopNavbar />

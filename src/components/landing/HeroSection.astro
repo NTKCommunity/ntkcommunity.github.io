@@ -1,43 +1,331 @@
-<section class="bg-white py-16 relative">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-    <!-- Right on Mobile / Left on Desktop: Card Stack -->
-    <div class="md:order-2">
-      <div class="relative w-full h-[350px] md:h-[420px]">
-        <!-- Connect -->
-        <div class="absolute top-0 left-[25%] md:left-[50%] transform -translate-x-1/2 w-36 md:w-44 bg-blue-600 text-white p-5 rounded-xl shadow-xl text-center font-bold text-lg z-30">
-          Connect
+<section class="bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12 sm:py-20 md:py-16 relative overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-20 -z-10"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-20 -z-10"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      
+      <!-- Content Section -->
+      <div class="order-2 lg:order-1 space-y-6 animate-fade-in relative z-10">
+        <div class="inline-block">
+          <span class="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-semibold rounded-full shadow-lg">
+            🚀 Building Tomorrow's Tech Leaders
+          </span>
         </div>
-
-        <!-- Learn -->
-        <div class="absolute top-[70px] left-[45%] md:left-[35%] transform -translate-x-1/2 w-36 md:w-44 bg-green-500 text-white p-5 rounded-xl shadow-xl text-center font-bold text-lg z-20">
-          Learn
-        </div>
-
-        <!-- Collaborate -->
-        <div class="absolute top-[140px] left-[60%] md:left-[65%] transform -translate-x-1/2 w-36 md:w-44 bg-orange-500 text-white p-5 rounded-xl shadow-xl text-center font-bold text-lg z-20">
-          Collaborate
-        </div>
-
-        <!-- Share -->
-        <div class="absolute top-[210px] left-[40%] md:left-[50%] transform -translate-x-1/2 w-36 md:w-44 bg-purple-600 text-white p-5 rounded-xl shadow-xl text-center font-bold text-lg z-10">
-          Share
+        
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-balance">
+          <span class="block bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+            A Vibrant Student Tech Community of
+          </span>
+          <span class="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent animate-gradient mt-2">
+            Change-Makers
+          </span>
+          <span class="flex items-center gap-3">
+             <span class="text-gray-900">&</span>
+             <span class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
+              Next-Gen Tech Leaders
+            </span>
+          </span>
+        </h1>
+        
+        <p class="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+          We are a student-led tech community and forum at NCIT where we connect, learn, and grow together. We talk about technology and innovation, share knowledge and experiences, and build a vibrant community of like-minded individuals.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
+          <a href="#get-involved" class="group inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-base sm:text-lg">
+            Join Us
+            <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+          <a href="https://ncit.edu.np" target="_blank" class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-gray-900 font-semibold rounded-xl shadow-md hover:shadow-lg border-2 border-gray-200 hover:border-blue-600 transform hover:-translate-y-1 transition-all duration-300 text-base sm:text-lg">
+            About NCIT
+          </a>
         </div>
       </div>
-    </div>
 
-    <!-- Left on Desktop / Below on Mobile: Text Content -->
-    <div class="md:order-1 relative mt-16 md:mt-0">
-      <div class="absolute top-[-20px] left-[-20px] w-16 h-16 bg-blue-100 rounded-full blur-2xl"></div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6 relative z-10">
-        A Vibrant Student Tech Community of <span class="text-blue-600">Change-Makers</span> & <span class="text-indigo-600">Next-Gen Tech Leaders</span><br>
-        rooted at <a href="https://ncit.edu.np" target="_blank" class="underline hover:text-blue-800">NCIT</a>
-      </h1>
-      <p class="text-lg text-gray-700 mb-6 relative z-10">
-        Join a place where innovation thrives and passion leads the way. Whether you're a coder, designer, thinker, or dreamer — there's space for you at NTK.
-      </p>
+      <!-- Cards Section - Stacked on mobile, Triangular on desktop -->
+      <div class="order-1 lg:order-2 relative h-[450px] sm:h-[500px] lg:h-[650px] flex items-center justify-center w-full">
+        <!-- New Universal Stack Layout (Mobile & Desktop) -->
+        <div class="relative w-full h-full flex items-center justify-center" id="card-stack">
+          <!-- Cards will be initialized via JS for the cascading effect -->
+        </div>
+        
+        <!-- Mobile Navigation Tokens (Simple counter/dots) -->
+        <div class="lg:hidden absolute bottom-0 left-0 right-0 flex justify-center gap-2 pb-4 z-50">
+          <div id="carousel-dots" class="flex gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full">
+            <!-- Dots will be rendered here -->
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+<script>
+  // Card data
+  const cardData = [
+    {
+      name: 'connect',
+      title: 'Connect',
+      description: 'Build lasting networks and meaningful relationships',
+      image: '/images/highlights/connect_community_announcement.jpg',
+      gradient: 'from-blue-500 to-blue-700',
+      textColor: 'blue',
+      icon: '🤝'
+    },
+    {
+      name: 'learn',
+      title: 'Learn',
+      description: 'Grow your skills through workshops and mentorship',
+      image: '/images/highlights/learning_ai_workshop.jpg',
+      gradient: 'from-green-500 to-emerald-700',
+      textColor: 'green',
+      icon: '📚'
+    },
+    {
+      name: 'innovate',
+      title: 'Innovate',
+      description: 'Create the future with cutting-edge technology',
+      image: '/images/highlights/innovation_students_involved_in_IOT.jpg',
+      gradient: 'from-cyan-500 to-teal-700',
+      textColor: 'cyan',
+      icon: '💡'
+    },
+    {
+      name: 'collaborate',
+      title: 'Collaborate',
+      description: 'Work together on exciting projects and ideas',
+      image: '/images/highlights/collaboration_durin_bootcamp.jpg',
+      gradient: 'from-orange-500 to-red-600',
+      textColor: 'orange',
+      icon: '🤜🤛'
+    },
+    {
+      name: 'share',
+      title: 'Share',
+      description: 'Spread knowledge and inspire the community',
+      image: '/images/highlights/sharing_knowledge.jpg',
+      gradient: 'from-purple-500 to-pink-600',
+      textColor: 'purple',
+      icon: '💬'
+    }
+  ];
+
+  // Different position configurations for mobile stack and desktop spotlight layout
+  const desktopPositions = [
+    { scale: 1.1, zIndex: 50, opacity: 1, y: -60, x: 0, rotate: 0 },    // Top (Featured)
+    { scale: 0.95, zIndex: 40, opacity: 1, y: 60, x: 180, rotate: 8 },   // Right (Staged)
+    { scale: 0.85, zIndex: 20, opacity: 0, y: 100, x: 0, rotate: 0 },     // Hidden 1
+    { scale: 0.85, zIndex: 20, opacity: 0, y: 100, x: 0, rotate: 0 },     // Hidden 2
+    { scale: 0.95, zIndex: 40, opacity: 1, y: 60, x: -180, rotate: -8 }, // Left (Staged)
+  ];
+
+  const mobilePositions = [
+    { scale: 1, zIndex: 50, opacity: 1, y: 0, x: 0, rotate: 0 },
+    { scale: 0.95, zIndex: 40, opacity: 0.8, y: -20, x: 20, rotate: 2 },
+    { scale: 0.9, zIndex: 30, opacity: 0.6, y: -40, x: 40, rotate: 4 },
+    { scale: 0.85, zIndex: 20, opacity: 0, y: -60, x: 60, rotate: 6 },
+    { scale: 0.85, zIndex: 20, opacity: 0, y: -60, x: 60, rotate: 6 },
+  ];
+  
+  let currentStackOrder = [0, 1, 2, 3, 4];
+  
+  let autoRotateInterval;
+  let mobileAutoScrollInterval;
+  let userInteractionTimeout;
+  let isUserInteracting = false;
+  let isMobile = false;
+  let currentMobileIndex = 0;
+
+  // Universal Stack Functions (Unified for mobile/desktop but with different offsets)
+  function renderStackCards() {
+    const container = document.getElementById('card-stack');
+    if (!container) return;
+
+    const isMobileView = window.innerWidth < 1024;
+    const currentPositions = isMobileView ? mobilePositions : desktopPositions;
+    
+    const cardWidth = isMobileView ? (window.innerWidth * 0.85) : 400;
+    const cardHeight = isMobileView ? 380 : 360;
+
+    container.innerHTML = cardData.map((card, index) => {
+      const pos = currentPositions[index];
+      
+      return `
+        <div 
+          class="stack-card absolute cursor-pointer transition-all duration-700 ease-in-out"
+          data-index="${index}"
+          style="width: ${cardWidth}px;
+                 left: 50%;
+                 top: 50%;
+                 z-index: ${pos.zIndex}; 
+                 opacity: ${pos.opacity}; 
+                 transform: translate(calc(-50% + ${pos.x}px), calc(-50% + ${pos.y}px)) scale(${pos.scale}) rotate(${pos.rotate}deg);"
+          onclick="shuffleStack()"
+        >
+          <div class="card-inner relative overflow-hidden rounded-[2rem] shadow-2xl bg-gradient-to-br ${card.gradient} transition-transform duration-300 hover:scale-105" style="height: ${cardHeight}px">
+            <img src="${card.image}" alt="${card.title}" class="w-full h-1/2 object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+              <div class="flex items-center justify-between mb-3 lg:mb-3">
+                <h3 class="text-white font-bold text-xl lg:text-3xl drop-shadow-lg leading-tight">${card.title}</h3>
+                <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <span class="text-xl lg:text-3xl">${card.icon}</span>
+                </div>
+              </div>
+              <p class="text-white/90 text-[13px] lg:text-base leading-relaxed line-clamp-2 lg:line-clamp-2">${card.description}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    renderCarouselDots();
+  }
+
+  function renderCarouselDots() {
+    const dotsContainer = document.getElementById('carousel-dots');
+    if (!dotsContainer) return;
+
+    const topCardIndex = currentStackOrder[0];
+
+    dotsContainer.innerHTML = cardData.map((_, index) => `
+      <div 
+        class="w-2 h-2 rounded-full transition-all duration-300 ${index === topCardIndex ? 'bg-blue-600 w-6' : 'bg-gray-400 opacity-50'}"
+      ></div>
+    `).join('');
+  }
+
+  function shuffleStack() {
+    const cards = document.querySelectorAll('.stack-card');
+    if (!cards.length) return;
+    
+    const isMobileView = window.innerWidth < 1024;
+    const currentPositions = isMobileView ? mobilePositions : desktopPositions;
+    
+    // Rotate the order
+    currentStackOrder.push(currentStackOrder.shift());
+    
+    cards.forEach((card, i) => {
+      const cardIndex = parseInt(card.getAttribute('data-index'));
+      const positionIndex = currentStackOrder.indexOf(cardIndex);
+      const pos = currentPositions[positionIndex];
+      
+      card.style.zIndex = pos.zIndex;
+      card.style.opacity = pos.opacity;
+      card.style.transform = `translate(calc(-50% + ${pos.x}px), calc(-50% + ${pos.y}px)) scale(${pos.scale}) rotate(${pos.rotate}deg)`;
+    });
+
+    renderCarouselDots();
+
+    // Pause auto rotation briefly after click
+    pauseAutoRotation();
+    clearTimeout(userInteractionTimeout);
+    userInteractionTimeout = setTimeout(() => {
+      startAutoRotation();
+    }, 6000);
+  }
+
+  function startAutoRotation() {
+    if (autoRotateInterval) {
+      clearInterval(autoRotateInterval);
+    }
+    autoRotateInterval = setInterval(shuffleStack, 5000);
+  }
+
+  function pauseAutoRotation() {
+    if (autoRotateInterval) {
+      clearInterval(autoRotateInterval);
+      autoRotateInterval = null;
+    }
+  }
+
+  function checkMobile() {
+    const wasMobile = isMobile;
+    isMobile = window.innerWidth < 1024;
+    
+    if (isMobile !== wasMobile) {
+      renderStackCards();
+    }
+    
+    startAutoRotation();
+  }
+
+  // Initialize
+  if (typeof window !== 'undefined') {
+    renderStackCards();
+    checkMobile();
+    
+    // Handle window resize
+    window.addEventListener('resize', checkMobile);
+    
+    // Swipe support for mobile stack
+    let touchStartX = 0;
+    const stackContainer = document.getElementById('card-stack');
+    
+    if (stackContainer) {
+      stackContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      
+      stackContainer.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].screenX;
+        if (Math.abs(touchStartX - touchEndX) > 50) {
+          shuffleStack();
+        }
+      }, { passive: true });
+    }
+  }
+</script>
+
+<style>
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Hide scrollbar for mobile carousel */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+</style>
 
 <!-- CTA Under Hero -->
 <section class="bg-gray-50 py-12">
@@ -46,7 +334,8 @@
       Inclusive. Diverse. Open. <span class="text-blue-600">Find your place with us.</span>
     </h2>
     <p class="text-gray-600 text-md mb-6">
-      Whether you're into coding, public speaking, design, organizing, or just exploring tech — NTK welcomes you.
+      We are an inclusive and diverse community open to students at NCIT and beyond to join us, industry leaders and experts to share with us, and tech enthusiasts to collaborate with us.
+      Whether you're a student, faculty member, industry professional, or just a tech enthusiast—we welcome you to join our journey.
     </p>
     <a href="#get-involved" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition font-medium">
       See What's For You →

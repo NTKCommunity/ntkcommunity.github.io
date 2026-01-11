@@ -1,0 +1,52 @@
+---
+import { teamData } from "../../data/team.js";
+
+const currentTenure = teamData.find(t => t.tenure === "2025/26");
+const featuredExecutives = currentTenure.executives.slice(0, 4);
+---
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Meet Our <span class="text-blue-600">Executive Team</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Dedicated student leaders driving the Nepal Tek Community towards excellence.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {featuredExecutives.map((exec) => (
+        <a href={`/team/${exec.id}`} class="group">
+          <div class="relative overflow-hidden rounded-2xl aspect-square mb-4 shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+            <img 
+              src={exec.image} 
+              alt={exec.name} 
+              class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="text-white text-sm font-medium">View Profile →</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{exec.name}</h3>
+            <p class="text-blue-600 font-medium text-sm">{exec.role}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-16 text-center">
+      <a 
+        href="/team" 
+        class="inline-flex items-center px-8 py-3 bg-blue-50 text-blue-600 font-semibold rounded-xl hover:bg-blue-100 transition-colors shadow-sm"
+      >
+        View All Executives
+        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
