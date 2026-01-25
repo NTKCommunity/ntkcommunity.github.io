@@ -1,0 +1,11 @@
+{
+  "id": "exec-5",
+  "name": "Executive 5",
+  "role": "Member",
+  "tenure": "2025/26",
+  "image": "https://ui-avatars.com/api/?name=Exec+5&background=random",
+  "bio": "Learning and growing with the community.",
+  "socials": {
+    "linkedin": "#"
+  }
+}

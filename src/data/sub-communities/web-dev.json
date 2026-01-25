@@ -1,0 +1,17 @@
+{
+  "id": "web-dev",
+  "name": "Web Development",
+  "description": "Dive into the world of modern web technologies, from frontend frameworks to backend systems.",
+  "captain": {
+    "name": "Web Captain",
+    "image": "https://ui-avatars.com/api/?name=Web+Captain&background=random",
+    "message": "Ready to build the web? Reach out if you have projects or ideas!"
+  },
+  "longDescription": "Our Web Development sub-community is a hub for developers of all skill levels. We organize workshops on React, Astro, Node.js, and more. Whether you are just starting with HTML or are a seasoned pro exploring cloud-native architectures, there is a place for you here.",
+  "vision": "To create a pool of world-class web developers from NCIT who can compete globally.",
+  "projects": [
+    "Community Website",
+    "Event Registration System",
+    "Student Portfolio Gallery"
+  ]
+}

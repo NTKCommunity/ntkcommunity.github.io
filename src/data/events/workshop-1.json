@@ -1,0 +1,10 @@
+{
+  "id": "workshop-1",
+  "title": "Astro vs Next.js: Scaling Web Apps",
+  "date": "2025-02-21",
+  "time": "4:00 PM - 6:00 PM",
+  "location": "Virtual",
+  "description": "A deep dive comparison of modern web frameworks and why Astro is becoming a favorite for content-rich sites.",
+  "category": "Workshop",
+  "image": "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&q=80&w=1200"
+}

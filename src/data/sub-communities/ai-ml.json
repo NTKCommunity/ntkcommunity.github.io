@@ -1,0 +1,17 @@
+{
+  "id": "ai-ml",
+  "name": "AI & Machine Learning",
+  "description": "Explore the frontiers of artificial intelligence, data science, and machine learning algorithms.",
+  "captain": {
+    "name": "AI Captain",
+    "image": "https://ui-avatars.com/api/?name=AI+Captain&background=random",
+    "message": "Let's innovate with data. Contact me for AI/ML collaborations!"
+  },
+  "longDescription": "The AI & ML sub-community focuses on practical applications of machine learning. We cover topics from basic regression to deep learning and natural language processing. We encourage members to work on real-world datasets and participate in hackathons.",
+  "vision": "Identifying and solving local problems using data-driven approaches.",
+  "projects": [
+    "Price Prediction Bot",
+    "Nepali OCR Engine",
+    "Personalized Learning Path Recommendation"
+  ]
+}
