@@ -1,0 +1,11 @@
+{
+  "id": "past-coordinator",
+  "name": "Past Coordinator",
+  "role": "Co-ordinator",
+  "tenure": "2024/25",
+  "image": "https://ui-avatars.com/api/?name=Past+Coord&background=random",
+  "bio": "Founding member and first coordinator of NTK.",
+  "socials": {
+    "linkedin": "#"
+  }
+}
