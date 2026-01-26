@@ -10,6 +10,7 @@ import suprimJoshi from './team/executives/suprim-joshi.json';
 import dineshShakya from './team/executives/dinesh-shakya.json';
 
 // Import past members
+import satyarajAwasthi from './team/past-members/satyaraj-awasthi.json';
 import advisor1 from './team/past-members/advisor-1.json';
 import pastCoordinator from './team/past-members/past-coordinator.json';
 import pastTechLead from './team/past-members/past-tech-lead.json';
@@ -25,6 +26,7 @@ const allMembers = [
     arunimaChand,
     suprimJoshi,
     dineshShakya,
+    satyarajAwasthi,
     advisor1,
     pastCoordinator,
     pastTechLead
