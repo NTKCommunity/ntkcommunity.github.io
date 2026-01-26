@@ -1,0 +1,20 @@
+{
+  "id": "devops-cloud",
+  "name": "DevOps & Cloud Computing",
+  "description": "Master containerization, CI/CD pipelines, and cloud infrastructure management.",
+  "captain": {
+    "name": "Nirajan Devkota",
+    "image": "/images/team/nirajan.jpeg",
+    "bio": "Software Engineering student | A motivated software engineering student focused in developing efficient and reliable software solutions",
+    "message": "Let's automate and scale together. Reach out for DevOps and cloud collaborations!",
+    "github": "https://github.com/nirajan334",
+    "linkedin": "https://www.linkedin.com/in/nirajan-devkota-54b010327/"
+  },
+  "longDescription": "The DevOps & Cloud Computing sub-community focuses on modern infrastructure practices, automation, and cloud-native technologies. We explore Docker, Kubernetes, CI/CD pipelines, AWS, Azure, and other cloud platforms to build scalable and reliable systems.",
+  "vision": "Empowering students with cloud and DevOps skills to build the next generation of scalable applications.",
+  "projects": [
+    "Automated Deployment Pipeline",
+    "Infrastructure as Code Templates",
+    "Cloud Cost Optimization Tool"
+  ]
+}

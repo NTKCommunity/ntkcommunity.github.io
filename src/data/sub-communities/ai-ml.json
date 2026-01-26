@@ -3,9 +3,11 @@
   "name": "AI & Machine Learning",
   "description": "Explore the frontiers of artificial intelligence, data science, and machine learning algorithms.",
   "captain": {
-    "name": "AI Captain",
-    "image": "https://ui-avatars.com/api/?name=AI+Captain&background=random",
-    "message": "Let's innovate with data. Contact me for AI/ML collaborations!"
+    "name": "Jyoti Kumari Yadav",
+    "image": "/images/team/jyoti.jpeg",
+    "bio": "Computer Engineering Student | Java & Python Learner | Exploring AI, Machine Learning & Software Development",
+    "message": "Let's innovate with data. Contact me for AI/ML collaborations!",
+    "linkedin": "https://www.linkedin.com/in/jyoti-yadav-366659341"
   },
   "longDescription": "The AI & ML sub-community focuses on practical applications of machine learning. We cover topics from basic regression to deep learning and natural language processing. We encourage members to work on real-world datasets and participate in hackathons.",
   "vision": "Identifying and solving local problems using data-driven approaches.",

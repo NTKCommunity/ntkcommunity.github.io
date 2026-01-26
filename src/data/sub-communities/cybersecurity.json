@@ -3,9 +3,13 @@
   "name": "Cybersecurity",
   "description": "Learn about network security, ethical hacking, and protecting the digital landscape.",
   "captain": {
-    "name": "Security Captain",
-    "image": "https://ui-avatars.com/api/?name=Security+Captain&background=random",
-    "message": "Join us in securing the future. Reach out for any security-related opportunities."
+    "name": "Ishbarna Kafle",
+    "image": "/images/team/ishbarna.jpeg",
+    "bio": "Cybersecurity enthusiast dedicated to building secure and engaging digital communities.",
+    "message": "Join us in securing the future. Reach out for any security-related opportunities.",
+    "github": "https://github.com/ishbarna",
+    "linkedin": "https://www.linkedin.com/in/ishbarna-kafle/",
+    "website": "https://ishbarnakafle.com.np"
   },
   "longDescription": "In an increasingly digital world, security is paramount. Our sub-community explores various aspects of cybersecurity including web security, cryptography, and network defense. We conduct regular CTF (Capture The Flag) competitions to sharpen skills.",
   "vision": "Building a security-first mindset among students and contributing to a safer digital Nepal.",
