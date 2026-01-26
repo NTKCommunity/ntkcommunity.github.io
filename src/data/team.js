@@ -11,9 +11,8 @@ import dineshShakya from './team/executives/dinesh-shakya.json';
 
 // Import past members
 import satyarajAwasthi from './team/past-members/satyaraj-awasthi.json';
-import advisor1 from './team/past-members/advisor-1.json';
-import pastCoordinator from './team/past-members/past-coordinator.json';
-import pastTechLead from './team/past-members/past-tech-lead.json';
+import hemrajPant2024 from './team/past-members/hemraj-pant-2024.json';
+import biratAryal2024 from './team/past-members/birat-aryal-2024.json';
 
 // Group team members by tenure (executives only, not sub-community captains)
 const allMembers = [
@@ -27,9 +26,8 @@ const allMembers = [
     suprimJoshi,
     dineshShakya,
     satyarajAwasthi,
-    advisor1,
-    pastCoordinator,
-    pastTechLead
+    hemrajPant2024,
+    biratAryal2024
 ];
 
 // Group by tenure
