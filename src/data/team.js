@@ -1,30 +1,30 @@
-// Import all team member JSON files
-import satyarajAwasthi from './team/satyaraj-awasthi.json';
-import techLeadPlaceholder from './team/tech-lead-placeholder.json';
-import prLeadPlaceholder from './team/pr-lead-placeholder.json';
-import secretaryPlaceholder from './team/secretary-placeholder.json';
-import eventCoordinatorPlaceholder from './team/event-coordinator-placeholder.json';
-import exec1 from './team/exec-1.json';
-import exec2 from './team/exec-2.json';
-import exec3 from './team/exec-3.json';
-import exec4 from './team/exec-4.json';
-import exec5 from './team/exec-5.json';
-import advisor1 from './team/advisor-1.json';
-import pastCoordinator from './team/past-coordinator.json';
-import pastTechLead from './team/past-tech-lead.json';
+// Import executive members
+import hemrajPant from './team/executives/hemraj-pant.json';
+import biratAryal from './team/executives/birat-aryal.json';
+import nirajBhusal from './team/executives/niraj-bhusal.json';
+import aakritiDahal from './team/executives/aakriti-dahal.json';
+import anishaSwarnkar from './team/executives/anisha-swarnkar.json';
+import gauravJoshi from './team/executives/gaurav-joshi.json';
+import arunimaChand from './team/executives/arunima-chand.json';
+import suprimJoshi from './team/executives/suprim-joshi.json';
+import dineshShakya from './team/executives/dinesh-shakya.json';
 
-// Group team members by tenure
+// Import past members
+import advisor1 from './team/past-members/advisor-1.json';
+import pastCoordinator from './team/past-members/past-coordinator.json';
+import pastTechLead from './team/past-members/past-tech-lead.json';
+
+// Group team members by tenure (executives only, not sub-community captains)
 const allMembers = [
-    satyarajAwasthi,
-    techLeadPlaceholder,
-    prLeadPlaceholder,
-    secretaryPlaceholder,
-    eventCoordinatorPlaceholder,
-    exec1,
-    exec2,
-    exec3,
-    exec4,
-    exec5,
+    hemrajPant,
+    biratAryal,
+    nirajBhusal,
+    aakritiDahal,
+    anishaSwarnkar,
+    gauravJoshi,
+    arunimaChand,
+    suprimJoshi,
+    dineshShakya,
     advisor1,
     pastCoordinator,
     pastTechLead
